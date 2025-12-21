@@ -1,0 +1,156 @@
+{
+    "exercises": [
+        {
+            "id": "ex1",
+            "type": "tebak-gambar",
+            "name": "Tebak Gambar",
+            "description": "Pilih nama yang cocok dengan gambar",
+            "icon": "image",
+            "difficulty": "mudah",
+            "questions": [
+                {
+                    "id": "q1",
+                    "imageEmoji": "🍎",
+                    "imageName": "Apel",
+                    "options": [
+                        "Apel",
+                        "Jeruk",
+                        "Mangga",
+                        "Pisang"
+                    ],
+                    "correctAnswer": "Apel"
+                },
+                {
+                    "id": "q2",
+                    "imageEmoji": "🐓",
+                    "imageName": "Ayam",
+                    "options": [
+                        "Bebek",
+                        "Ayam",
+                        "Burung",
+                        "Kucing"
+                    ],
+                    "correctAnswer": "Ayam"
+                },
+                {
+                    "id": "q3",
+                    "imageEmoji": "🏠",
+                    "imageName": "Rumah",
+                    "options": [
+                        "Gedung",
+                        "Rumah",
+                        "Toko",
+                        "Masjid"
+                    ],
+                    "correctAnswer": "Rumah"
+                },
+                {
+                    "id": "q4",
+                    "imageEmoji": "☀️",
+                    "imageName": "Matahari",
+                    "options": [
+                        "Bulan",
+                        "Bintang",
+                        "Matahari",
+                        "Awan"
+                    ],
+                    "correctAnswer": "Matahari"
+                },
+                {
+                    "id": "q5",
+                    "imageEmoji": "🌺",
+                    "imageName": "Bunga",
+                    "options": [
+                        "Daun",
+                        "Bunga",
+                        "Pohon",
+                        "Rumput"
+                    ],
+                    "correctAnswer": "Bunga"
+                }
+            ]
+        },
+        {
+            "id": "ex2",
+            "type": "cocokkan-kata",
+            "name": "Cocokkan Kata",
+            "description": "Cocokkan kata dengan pasangannya",
+            "icon": "link",
+            "difficulty": "sedang",
+            "pairs": [
+                {
+                    "left": "Pagi",
+                    "right": "Malam"
+                },
+                {
+                    "left": "Besar",
+                    "right": "Kecil"
+                },
+                {
+                    "left": "Panas",
+                    "right": "Dingin"
+                },
+                {
+                    "left": "Tinggi",
+                    "right": "Rendah"
+                },
+                {
+                    "left": "Cepat",
+                    "right": "Lambat"
+                }
+            ]
+        },
+        {
+            "id": "ex3",
+            "type": "ingat-urutan",
+            "name": "Ingat Urutan",
+            "description": "Ingat dan ulangi urutan yang ditampilkan",
+            "icon": "brain",
+            "difficulty": "sedang",
+            "sequences": [
+                {
+                    "id": "s1",
+                    "level": 1,
+                    "items": [
+                        "🔴",
+                        "🔵"
+                    ],
+                    "description": "Ingat 2 warna"
+                },
+                {
+                    "id": "s2",
+                    "level": 2,
+                    "items": [
+                        "🔴",
+                        "🟢",
+                        "🔵"
+                    ],
+                    "description": "Ingat 3 warna"
+                },
+                {
+                    "id": "s3",
+                    "level": 3,
+                    "items": [
+                        "🔴",
+                        "🟡",
+                        "🟢",
+                        "🔵"
+                    ],
+                    "description": "Ingat 4 warna"
+                },
+                {
+                    "id": "s4",
+                    "level": 4,
+                    "items": [
+                        "🔴",
+                        "🟡",
+                        "🟢",
+                        "🔵",
+                        "🟣"
+                    ],
+                    "description": "Ingat 5 warna"
+                }
+            ]
+        }
+    ]
+}

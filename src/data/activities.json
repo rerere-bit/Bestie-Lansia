@@ -1,0 +1,103 @@
+{
+    "activities": [
+        {
+            "id": "act1",
+            "name": "Minum Obat Pagi",
+            "description": "Minum obat sesuai resep dokter",
+            "icon": "pill",
+            "scheduledTime": "07:00",
+            "category": "kesehatan"
+        },
+        {
+            "id": "act2",
+            "name": "Ibadah Pagi",
+            "description": "Sholat Subuh / Ibadah pagi",
+            "icon": "heart",
+            "scheduledTime": "05:30",
+            "category": "ibadah"
+        },
+        {
+            "id": "act3",
+            "name": "Sarapan",
+            "description": "Makan pagi yang sehat dan bergizi",
+            "icon": "utensils",
+            "scheduledTime": "08:00",
+            "category": "aktivitas"
+        },
+        {
+            "id": "act4",
+            "name": "Jalan Pagi",
+            "description": "Olahraga ringan selama 15-30 menit",
+            "icon": "footprints",
+            "scheduledTime": "06:30",
+            "category": "olahraga"
+        },
+        {
+            "id": "act5",
+            "name": "Minum Obat Siang",
+            "description": "Minum obat sesuai resep dokter",
+            "icon": "pill",
+            "scheduledTime": "12:00",
+            "category": "kesehatan"
+        },
+        {
+            "id": "act6",
+            "name": "Makan Siang",
+            "description": "Makan siang yang sehat dan bergizi",
+            "icon": "utensils",
+            "scheduledTime": "12:30",
+            "category": "aktivitas"
+        },
+        {
+            "id": "act7",
+            "name": "Istirahat Siang",
+            "description": "Tidur siang selama 30-60 menit",
+            "icon": "moon",
+            "scheduledTime": "13:00",
+            "category": "istirahat"
+        },
+        {
+            "id": "act8",
+            "name": "Minum Obat Malam",
+            "description": "Minum obat sesuai resep dokter",
+            "icon": "pill",
+            "scheduledTime": "19:00",
+            "category": "kesehatan"
+        },
+        {
+            "id": "act9",
+            "name": "Ibadah Malam",
+            "description": "Sholat Isya / Ibadah malam",
+            "icon": "heart",
+            "scheduledTime": "19:30",
+            "category": "ibadah"
+        }
+    ],
+    "categories": [
+        {
+            "id": "kesehatan",
+            "name": "Kesehatan",
+            "color": "#059669"
+        },
+        {
+            "id": "ibadah",
+            "name": "Ibadah",
+            "color": "#7c3aed"
+        },
+        {
+            "id": "aktivitas",
+            "name": "Aktivitas Harian",
+            "color": "#0284c7"
+        },
+        {
+            "id": "olahraga",
+            "name": "Olahraga",
+            "color": "#ea580c"
+        },
+        {
+            "id": "istirahat",
+            "name": "Istirahat",
+            "color": "#4b5563"
+        }
+    ]
+}

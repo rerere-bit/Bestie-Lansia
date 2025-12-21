@@ -1,0 +1,85 @@
+{
+    "lansia": [
+        {
+            "id": "1",
+            "name": "Pak Budi Santoso",
+            "age": 72,
+            "gender": "male",
+            "address": "Jl. Mawar No. 15, Makassar",
+            "community": "Posyandu Melati",
+            "phone": "0812-3456-7890",
+            "emergencyContact": "Bu Ani (Anak)",
+            "emergencyPhone": "0813-9876-5432"
+        },
+        {
+            "id": "2",
+            "name": "Bu Siti Rahayu",
+            "age": 68,
+            "gender": "female",
+            "address": "Jl. Kenanga No. 8, Makassar",
+            "community": "Posyandu Melati",
+            "phone": "0811-2233-4455",
+            "emergencyContact": "Pak Rudi (Anak)",
+            "emergencyPhone": "0812-5566-7788"
+        },
+        {
+            "id": "3",
+            "name": "Pak Ahmad Dahlan",
+            "age": 75,
+            "gender": "male",
+            "address": "Jl. Anggrek No. 22, Makassar",
+            "community": "Posyandu Bougenville",
+            "phone": "0813-1122-3344",
+            "emergencyContact": "Bu Fatimah (Istri)",
+            "emergencyPhone": "0814-5566-7799"
+        },
+        {
+            "id": "4",
+            "name": "Bu Kartini Wulandari",
+            "age": 70,
+            "gender": "female",
+            "address": "Jl. Dahlia No. 5, Makassar",
+            "community": "Posyandu Bougenville",
+            "phone": "0815-9988-7766",
+            "emergencyContact": "Bu Dewi (Anak)",
+            "emergencyPhone": "0816-1234-5678"
+        }
+    ],
+    "keluarga": [
+        {
+            "id": "k1",
+            "name": "Bu Ani Santoso",
+            "relation": "Anak",
+            "linkedLansiaId": "1",
+            "phone": "0813-9876-5432"
+        },
+        {
+            "id": "k2",
+            "name": "Pak Rudi Rahayu",
+            "relation": "Anak",
+            "linkedLansiaId": "2",
+            "phone": "0812-5566-7788"
+        }
+    ],
+    "kader": [
+        {
+            "id": "kd1",
+            "name": "Ibu Nurhasanah",
+            "community": "Posyandu Melati",
+            "phone": "0817-1234-5678"
+        },
+        {
+            "id": "kd2",
+            "name": "Ibu Maryam",
+            "community": "Posyandu Bougenville",
+            "phone": "0818-8765-4321"
+        }
+    ],
+    "admin": [
+        {
+            "id": "a1",
+            "name": "Admin Dinas Kesehatan",
+            "role": "Administrator"
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "communities": [
+        {
+            "id": "c1",
+            "name": "Posyandu Melati",
+            "location": "Kelurahan Rappocini, Kec. Rappocini",
+            "address": "Jl. Rappocini Raya No. 10, Makassar",
+            "schedule": "Setiap Selasa, 08:00 - 11:00",
+            "leadKader": "Ibu Nurhasanah",
+            "phone": "0817-1234-5678",
+            "totalMembers": 25,
+            "description": "Posyandu lansia untuk warga Kelurahan Rappocini"
+        },
+        {
+            "id": "c2",
+            "name": "Posyandu Bougenville",
+            "location": "Kelurahan Tamalate, Kec. Tamalate",
+            "address": "Jl. Tamalate No. 55, Makassar",
+            "schedule": "Setiap Kamis, 08:00 - 11:00",
+            "leadKader": "Ibu Maryam",
+            "phone": "0818-8765-4321",
+            "totalMembers": 32,
+            "description": "Posyandu lansia untuk warga Kelurahan Tamalate"
+        },
+        {
+            "id": "c3",
+            "name": "Posyandu Dahlia",
+            "location": "Kelurahan Panakkukang, Kec. Panakkukang",
+            "address": "Jl. Pengayoman No. 23, Makassar",
+            "schedule": "Setiap Rabu, 09:00 - 12:00",
+            "leadKader": "Ibu Rahmawati",
+            "phone": "0819-2233-4455",
+            "totalMembers": 28,
+            "description": "Posyandu lansia untuk warga Kelurahan Panakkukang"
+        },
+        {
+            "id": "c4",
+            "name": "Posyandu Mawar",
+            "location": "Kelurahan Makassar, Kec. Ujung Pandang",
+            "address": "Jl. Jend. Sudirman No. 88, Makassar",
+            "schedule": "Setiap Senin, 08:00 - 11:00",
+            "leadKader": "Ibu Suryani",
+            "phone": "0820-5566-7788",
+            "totalMembers": 35,
+            "description": "Posyandu lansia untuk warga Kelurahan Makassar"
+        }
+    ]
+}
