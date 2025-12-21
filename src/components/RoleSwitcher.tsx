@@ -50,16 +50,20 @@ export function RoleSwitcher({ onRoleSelect }: RoleSwitcherProps) {
                     <button
                         key={role.id}
                         onClick={() => handleRoleClick(role.id)}
-                        className="
-              w-full p-5 bg-white rounded-3xl shadow-sm
-              border-2 border-gray-100
-              hover:border-emerald-300 hover:shadow-lg
-              active:scale-[0.98]
-              transition-all duration-200
-              flex items-center gap-5
-              text-left
-              focus:outline-none focus:ring-4 focus:ring-emerald-500/30
-            "
+                        style={{
+                            width: '100%',
+                            padding: '20px',
+                            backgroundColor: '#f0fdf4', // light emerald background
+                            borderRadius: '24px',
+                            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                            border: '2px solid #a7f3d0', // emerald-200
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '20px',
+                            textAlign: 'left' as const,
+                            transition: 'all 0.2s ease',
+                        }}
                     >
                         <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center flex-shrink-0">
                             <Icon size={32} className="text-emerald-600" />
