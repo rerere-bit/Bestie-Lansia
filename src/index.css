@@ -72,14 +72,14 @@ body {
   outline-offset: 2px;
 }
 
-/* Link Styles */
-a {
+/* Link Styles - only apply to regular text links, not button-styled links */
+a:not([class*="bg-"]) {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
 }
 
-a:hover {
+a:not([class*="bg-"]):hover {
   text-decoration: underline;
 }
 

@@ -1,4 +1,4 @@
-import { type ReactNode } from 'react';
+import type { ReactNode, CSSProperties } from 'react';
 
 interface CardProps {
     children: ReactNode;
@@ -15,36 +15,43 @@ export function Card({
     variant = 'default',
     padding = 'lg',
 }: CardProps) {
-    const baseStyles = `
-    rounded-3xl
-    transition-all duration-200
-  `;
-
-    const variantStyles = {
-        default: 'bg-white shadow-sm',
-        elevated: 'bg-white shadow-xl shadow-gray-200/50',
-        outline: 'bg-white border-2 border-gray-200',
+    // Use inline styles to avoid CSS conflicts
+    const variantStyles: Record<string, CSSProperties> = {
+        default: {
+            backgroundColor: '#ffffff',
+            boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)',
+            border: 'none',
+        },
+        elevated: {
+            backgroundColor: '#ffffff',
+            boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
+            border: 'none',
+        },
+        outline: {
+            backgroundColor: '#ffffff',
+            boxShadow: 'none',
+            border: '2px solid #9ca3af', // gray-400 for visibility
+        },
     };
 
-    const paddingStyles = {
-        sm: 'p-4',
-        md: 'p-5',
-        lg: 'p-6',
+    const paddingValues = {
+        sm: '16px',
+        md: '20px',
+        lg: '24px',
     };
 
-    const interactiveStyles = onClick
-        ? 'cursor-pointer hover:shadow-lg hover:scale-[1.02] active:scale-[0.98]'
-        : '';
+    const baseStyle: CSSProperties = {
+        borderRadius: '24px',
+        transition: 'all 0.2s ease',
+        padding: paddingValues[padding],
+        ...variantStyles[variant],
+        cursor: onClick ? 'pointer' : 'default',
+    };
 
     return (
         <div
-            className={`
-        ${baseStyles}
-        ${variantStyles[variant]}
-        ${paddingStyles[padding]}
-        ${interactiveStyles}
-        ${className}
-      `}
+            style={baseStyle}
+            className={className}
             onClick={onClick}
             role={onClick ? 'button' : undefined}
             tabIndex={onClick ? 0 : undefined}
