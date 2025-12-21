@@ -3,11 +3,15 @@ import { MainLayout } from '../layouts/MainLayout';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { useApp } from '../context/AppContext';
-import { User, Phone, MapPin, Heart, RotateCcw } from 'lucide-react';
+import { User, Phone, MapPin, Heart, LogOut, RotateCcw } from 'lucide-react';
 
 export function ProfilePage() {
     const navigate = useNavigate();
     const { currentUser, currentRole, resetState, activityCompletions, exerciseCompletions } = useApp();
+
+    const handleLogout = () => {
+        navigate('/');
+    };
 
     const handleReset = () => {
         if (confirm('Apakah Anda yakin ingin menghapus semua data aktivitas?')) {
@@ -90,6 +94,15 @@ export function ProfilePage() {
 
                 {/* Actions */}
                 <div className="space-y-3">
+                    <Button
+                        fullWidth
+                        size="lg"
+                        variant="secondary"
+                        icon={<LogOut size={24} />}
+                        onClick={handleLogout}
+                    >
+                        Ganti Peran
+                    </Button>
                     <Button
                         fullWidth
                         size="lg"
