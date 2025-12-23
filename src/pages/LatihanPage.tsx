@@ -4,7 +4,7 @@ import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { useApp } from '../context/AppContext';
 import exercisesData from '../data/exercises.json';
-import { Image, Link, Brain, ArrowLeft, Check, X, RotateCcw } from 'lucide-react';
+import { Image, Link, Brain, ArrowLeft, Check, X } from 'lucide-react';
 
 type ExerciseMode = 'menu' | 'tebak-gambar' | 'cocokkan-kata' | 'ingat-urutan';
 
@@ -16,7 +16,7 @@ export function LatihanPage() {
     const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
-    const { completeExercise, isExerciseCompleted } = useApp();
+    const { completeExercise } = useApp();
 
     const exercises = exercisesData.exercises;
     const tebakGambar = exercises.find(e => e.type === 'tebak-gambar');
@@ -75,7 +75,7 @@ export function LatihanPage() {
                             className="cursor-pointer hover:shadow-xl transition-shadow"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-20 h-20 bg-gradient-to-br from-pink-400 to-pink-500 rounded-2xl flex items-center justify-center">
+                                <div className="w-20 h-20 bg-linear-to-br from-pink-400 to-pink-500 rounded-2xl flex items-center justify-center">
                                     <Image size={40} className="text-white" />
                                 </div>
                                 <div className="flex-1">
@@ -95,7 +95,7 @@ export function LatihanPage() {
                             className="cursor-pointer hover:shadow-xl transition-shadow"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-20 h-20 bg-gradient-to-br from-violet-400 to-violet-500 rounded-2xl flex items-center justify-center">
+                                <div className="w-20 h-20 bg-linear-to-br from-violet-400 to-violet-500 rounded-2xl flex items-center justify-center">
                                     <Link size={40} className="text-white" />
                                 </div>
                                 <div className="flex-1">
@@ -115,7 +115,7 @@ export function LatihanPage() {
                             className="cursor-pointer hover:shadow-xl transition-shadow"
                         >
                             <div className="flex items-center gap-4">
-                                <div className="w-20 h-20 bg-gradient-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center">
+                                <div className="w-20 h-20 bg-linear-to-br from-orange-400 to-orange-500 rounded-2xl flex items-center justify-center">
                                     <Brain size={40} className="text-white" />
                                 </div>
                                 <div className="flex-1">
@@ -173,7 +173,7 @@ export function LatihanPage() {
                     <div className="flex items-center justify-between mb-6">
                         <button
                             onClick={handleBackToMenu}
-                            className="flex items-center gap-2 text-gray-600 hover:text-gray-800 min-h-[48px]"
+                            className="flex items-center gap-2 text-gray-600 hover:text-gray-800 min-h-12"
                         >
                             <ArrowLeft size={24} />
                             <span className="text-lg font-medium">Kembali</span>
@@ -213,7 +213,7 @@ export function LatihanPage() {
                     ${buttonClass}
                     rounded-2xl p-5 text-xl font-bold text-gray-800
                     transition-all duration-200
-                    min-h-[80px]
+                    min-h-20
                     disabled:cursor-not-allowed
                     flex items-center justify-center gap-2
                   `}
@@ -250,7 +250,7 @@ export function LatihanPage() {
             <div className="px-5 py-6">
                 <button
                     onClick={handleBackToMenu}
-                    className="flex items-center gap-2 text-gray-600 hover:text-gray-800 min-h-[48px] mb-6"
+                    className="flex items-center gap-2 text-gray-600 hover:text-gray-800 min-h-12 mb-6"
                 >
                     <ArrowLeft size={24} />
                     <span className="text-lg font-medium">Kembali</span>

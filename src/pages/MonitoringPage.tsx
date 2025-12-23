@@ -41,17 +41,12 @@ export function MonitoringPage() {
                 <div className="space-y-4">
                     {lansiaUsers.map((user) => {
                         const stats = getUserStats(user.id);
-                        const status = stats.completed === 0
-                            ? 'pending'
-                            : stats.completed === stats.total
-                                ? 'completed'
-                                : 'pending';
 
                         return (
                             <Card key={user.id} variant="elevated">
                                 <div className="flex items-start gap-4">
                                     {/* Avatar */}
-                                    <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center flex-shrink-0">
+                                    <div className="w-16 h-16 bg-gray-100 rounded-2xl flex items-center justify-center shrink-0">
                                         <User size={32} className="text-gray-500" />
                                     </div>
 

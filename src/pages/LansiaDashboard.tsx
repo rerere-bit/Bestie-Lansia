@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { MainLayout } from '../layouts/MainLayout';
 import { Card } from '../components/ui/Card';
 import { useApp } from '../context/AppContext';
-import { ClipboardList, Brain, Calendar, TrendingUp, Users, Settings, Building2 } from 'lucide-react';
+import { ClipboardList, Brain, TrendingUp, Users, Settings, Building2 } from 'lucide-react';
 import activitiesData from '../data/activities.json';
 
 export function LansiaDashboard() {
@@ -153,7 +153,7 @@ export function LansiaDashboard() {
                     <Card
                         variant="elevated"
                         onClick={() => navigate('/aktivitas')}
-                        className="bg-gradient-to-br from-emerald-500 to-emerald-600 text-white cursor-pointer"
+                        className="bg-linear-to-br from-emerald-500 to-emerald-600 text-white cursor-pointer"
                     >
                         <div className="flex items-center justify-between">
                             <div>
@@ -173,7 +173,7 @@ export function LansiaDashboard() {
                     <Card
                         variant="elevated"
                         onClick={() => navigate('/latihan')}
-                        className="bg-gradient-to-br from-sky-500 to-sky-600 text-white cursor-pointer"
+                        className="bg-linear-to-br from-sky-500 to-sky-600 text-white cursor-pointer"
                     >
                         <div className="flex items-center justify-between">
                             <div>
