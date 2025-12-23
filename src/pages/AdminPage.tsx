@@ -35,7 +35,7 @@ export function AdminPage() {
                         className={`
               flex-1 flex items-center justify-center gap-2
               py-4 px-4 rounded-2xl font-bold text-lg
-              transition-all duration-200 min-h-[56px]
+              transition-all duration-200 min-h-14
               ${activeTab === 'users'
                                 ? 'bg-emerald-600 text-white shadow-lg'
                                 : 'bg-white text-gray-600 border-2 border-gray-200'
@@ -50,7 +50,7 @@ export function AdminPage() {
                         className={`
               flex-1 flex items-center justify-center gap-2
               py-4 px-4 rounded-2xl font-bold text-lg
-              transition-all duration-200 min-h-[56px]
+              transition-all duration-200 min-h-14
               ${activeTab === 'communities'
                                 ? 'bg-emerald-600 text-white shadow-lg'
                                 : 'bg-white text-gray-600 border-2 border-gray-200'
