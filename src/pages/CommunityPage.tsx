@@ -32,7 +32,7 @@ export function CommunityPage() {
                                 {/* Details */}
                                 <div className="space-y-3">
                                     <div className="flex items-start gap-3">
-                                        <MapPin size={22} className="text-emerald-600 flex-shrink-0 mt-1" />
+                                        <MapPin size={22} className="text-emerald-600 shrink-0" />
                                         <div>
                                             <p className="text-base font-medium text-gray-700">Lokasi</p>
                                             <p className="text-base text-gray-600">{community.address}</p>
@@ -40,7 +40,7 @@ export function CommunityPage() {
                                     </div>
 
                                     <div className="flex items-start gap-3">
-                                        <Clock size={22} className="text-sky-600 flex-shrink-0 mt-1" />
+                                        <Clock size={22} className="text-sky-600 shrink-0 mt-1" />
                                         <div>
                                             <p className="text-base font-medium text-gray-700">Jadwal</p>
                                             <p className="text-base text-gray-600">{community.schedule}</p>
@@ -48,7 +48,7 @@ export function CommunityPage() {
                                     </div>
 
                                     <div className="flex items-start gap-3">
-                                        <Users size={22} className="text-violet-600 flex-shrink-0 mt-1" />
+                                        <Users size={22} className="text-violet-600 shrink-0 mt-1" />
                                         <div>
                                             <p className="text-base font-medium text-gray-700">Kader</p>
                                             <p className="text-base text-gray-600">{community.leadKader}</p>
@@ -63,7 +63,7 @@ export function CommunityPage() {
                                     </span>
                                     <a
                                         href={`tel:${community.phone}`}
-                                        className="inline-flex items-center gap-2 bg-emerald-600 text-white px-5 py-3 rounded-xl font-semibold text-base hover:bg-emerald-700 transition-colors min-h-[48px]"
+                                        className="inline-flex items-center gap-2 bg-emerald-600 text-white px-5 py-3 rounded-xl font-semibold text-base hover:bg-emerald-700 transition-colors min-h-12"
                                     >
                                         <Phone size={20} />
                                         Hubungi
