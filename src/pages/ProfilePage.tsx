@@ -34,7 +34,7 @@ export function ProfilePage() {
                 {/* Profile Header */}
                 <Card variant="elevated" className="mb-6">
                     <div className="flex flex-col items-center text-center">
-                        <div className="w-24 h-24 bg-gradient-to-br from-emerald-400 to-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-lg">
+                        <div className="w-24 h-24 bg-linear-to-br from-emerald-400 to-emerald-500 rounded-full flex items-center justify-center mb-4 shadow-lg">
                             <User size={48} className="text-white" />
                         </div>
                         <h2 className="text-2xl font-bold text-gray-800">{userName}</h2>
@@ -50,7 +50,7 @@ export function ProfilePage() {
                         <h3 className="text-xl font-bold text-gray-800 mb-4">Informasi Pribadi</h3>
                         <div className="space-y-4">
                             <div className="flex items-start gap-3">
-                                <MapPin size={22} className="text-emerald-600 flex-shrink-0 mt-1" />
+                                <MapPin size={22} className="text-emerald-600 shrink-0 mt-1" />
                                 <div>
                                     <p className="text-base font-medium text-gray-700">Alamat</p>
                                     <p className="text-base text-gray-600">{currentUser.address}</p>
@@ -58,7 +58,7 @@ export function ProfilePage() {
                             </div>
 
                             <div className="flex items-start gap-3">
-                                <Phone size={22} className="text-sky-600 flex-shrink-0 mt-1" />
+                                <Phone size={22} className="text-sky-600 shrink-0 mt-1" />
                                 <div>
                                     <p className="text-base font-medium text-gray-700">Telepon</p>
                                     <p className="text-base text-gray-600">{currentUser.phone}</p>
@@ -66,7 +66,7 @@ export function ProfilePage() {
                             </div>
 
                             <div className="flex items-start gap-3">
-                                <Heart size={22} className="text-pink-600 flex-shrink-0 mt-1" />
+                                <Heart size={22} className="text-pink-600 shrink-0 mt-1" />
                                 <div>
                                     <p className="text-base font-medium text-gray-700">Kontak Darurat</p>
                                     <p className="text-base text-gray-600">{currentUser.emergencyContact}</p>

@@ -1,20 +1,19 @@
 import { useNavigate } from 'react-router-dom';
 import { RoleSwitcher } from '../components/RoleSwitcher';
-import { type UserRole } from '../types';
 import { Heart } from 'lucide-react';
 
 export function RoleSelectionPage() {
     const navigate = useNavigate();
 
-    const handleRoleSelect = (role: UserRole) => {
+    const handleRoleSelect = () => {
         navigate('/dashboard');
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-amber-50 to-sky-50 flex flex-col">
+        <div className="min-h-screen bg-linear-to-br from-emerald-50 via-amber-50 to-sky-50 flex flex-col">
             {/* Header */}
             <header className="pt-12 pb-8 px-6 text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-xl shadow-emerald-500/30">
+                <div className="w-24 h-24 bg-linear-to-br from-emerald-500 to-emerald-600 rounded-3xl mx-auto mb-6 flex items-center justify-center shadow-xl shadow-emerald-500/30">
                     <Heart size={48} className="text-white" fill="white" />
                 </div>
                 <h1 className="text-4xl font-bold text-gray-800 mb-3">
